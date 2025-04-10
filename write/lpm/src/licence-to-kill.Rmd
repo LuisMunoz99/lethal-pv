@@ -1,0 +1,176 @@
+---
+title: "License to Kill (Update: 2014–2024)"
+author: "Luis Emilio Muñoz"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: readable
+    highlight: tango
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+options(scipen = 999)
+
+library(tidyverse)
+library(data.table)
+library(kableExtra)
+library(ggplot2)
+library(scales)
+library(treemapify)
+library(viridis)
+
+df <- fread(here::here("./individual/fatal-victims/clean/output/fatal-victims-final.csv"))
+
+
+```
+
+# 1. Introduction
+
+This report analyzes deaths resulting from police interventions in Puerto Rico between 2014 and 2024. It focuses on **mechanism of death**, **age distribution**, **gender**, **yearly patterns**, and the **proportion of firearm-related deaths** by armed status. 
+The analysis is rooted in principles of **epidemiological surveillance**, **data equity**, and **public accountability**.
+
+---
+
+# 2. Distribution by Mechanism of Death
+
+```{r mechanism-frequency}
+smmry <- df %>%
+  count(mecanismo, name = "count") %>%
+  arrange(desc(count))
+
+smmry
+
+
+treemap_mech <- ggplot(smmry, aes(
+  area = count, 
+  fill = mecanismo,
+  label = paste(mecanismo, "\n", count)
+)) +
+  geom_treemap() +
+  geom_treemap_text(color = "white", place = "center", grow = TRUE) +
+  scale_fill_viridis_d(option = "C", end = 0.85) +
+  labs(
+    title = "Distribution of Deaths by Mechanism",
+    caption = "Source: Police intervention deaths dataset (2014–2024)"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    legend.position = "bottom"
+  )
+
+print(treemap_mech)
+```
+
+---
+
+# 3. Yearly Trends
+
+```{r year-distribution}
+year_dist <- df %>%
+  count(ano_rip) %>%
+  filter(is.finite(ano_rip)) %>%
+  arrange(ano_rip)
+
+year_dist_plot <- ggplot(year_dist, aes(x = ano_rip, y = n)) +
+  geom_col(fill = viridis::viridis(1, option = "D"), color = "white") +
+  geom_text(aes(label = n), vjust = -0.5, size = 5, fontface = "bold") +
+  scale_x_continuous(breaks = seq(min(year_dist$ano_rip), max(year_dist$ano_rip), 1)) +
+  labs(
+    title = "Fatalities per Year (2014–2024)",
+    x = "Year",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
+
+print(year_dist_plot)
+```
+
+---
+
+# 4. Firearm Deaths: Armed vs. Unarmed
+
+```{r firearm-proportion}
+firearm <- df %>%
+  filter(mecanismo == "arma reglamento", !is.na(armed)) %>%
+  count(armed) %>%
+  mutate(Proportion = n / sum(n),
+         PercentLabel = paste0(scales::percent(Proportion, 1), "\n", n))
+
+firearm
+
+firearm_pie <- ggplot(firearm, aes(x = "", y = Proportion, fill = armed)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = PercentLabel),
+    position = position_stack(vjust = 0.5),
+    color = "white",
+    size = 5,
+    fontface = "bold"
+  ) +
+  scale_fill_manual(
+    values = c("#F98400", "#666666"),
+    name = "Armed Status",
+    labels = c("Armed", "Unarmed")
+  ) +
+  labs(
+    title = "Firearm Deaths: Armed vs. Unarmed",
+    caption = "Among deaths involving firearms"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank(),
+    legend.title = element_text(face = "bold"),
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
+
+print(firearm_pie)
+```
+
+---
+
+# 5. Age Distribution (Grouped)
+
+```{r age-distribution}
+age <- df %>%
+  mutate(AgeGroup = cut(
+    edad, 
+    breaks = c(15, 21, 31, 41, Inf), 
+    labels = c("15–20", "21–30", "31–40", "40+"),
+    right = FALSE
+  ))
+
+age_dist <- age %>%
+  count(AgeGroup) %>%
+  arrange(AgeGroup)
+
+age_plot <- ggplot(age_dist, aes(x = AgeGroup, y = n, fill = AgeGroup)) +
+  geom_col(color = "white", show.legend = FALSE) +
+  geom_text(aes(label = n), vjust = 1.5, color = "white", size = 6, fontface = "bold") +
+  scale_fill_viridis_d(option = "E", end = 0.8) +
+  labs(
+    title = "Age Distribution of Victims",
+    x = "Age Group",
+    y = "Number of Deaths"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid = element_blank()
+  )
+
+print(age_plot)
+```
+
+---

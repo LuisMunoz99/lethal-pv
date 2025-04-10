@@ -4,21 +4,39 @@
 # Date: 2025-04-07
 # ---------------------------------------
 
-library(googlesheets4)
 library(dplyr)
+library(here)
+library(readxl)
+library(data.table)
+library(here)
+library(googledrive)
 
-# Autenticación (asegúrate de usar tu cuenta con acceso a la hoja)
-gs4_auth(email = "luism@kilometro0.org")
+# Auth
+drive_auth(email = Sys.getenv("WORK_EMAIL"))
 
-# URL o ID de la hoja de Google
-sheet_url <- "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXX/edit?usp=sharing"
+# 2. Identify folder --? file 
+folder <- drive_find(
+  q = "name contains 'NO EDITAR - Versión pública' and mimeType = 'application/vnd.google-apps.folder'",
+  corpora = "allDrives",
+  includeItemsFromAllDrives = TRUE
+)  %>% pull(id)
 
-# Ver los nombres de las hojas disponibles
-sheet_names(sheet_url)
+file <- drive_find(
+  q = sprintf(
+              "'%s' in parents and mimeType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'",
+              folder),
+  corpora = "allDrives",
+  includeItemsFromAllDrives = TRUE
+)  %>% pull(id)
 
-# Leer la hoja específica (por ejemplo, "mecanismo de muerte 2024")
-data <- read_sheet(sheet_url, sheet = "mecanismo de muerte 2024")
 
-# Vista previa de los datos
-head(data)
+# 4. Descargar archivo (temporal) 
+tmp_path <- tempfile(fileext = ".xlsx")
+drive_download(as_id(file), path = tmp_path, overwrite = TRUE)
 
+# 5. output 
+fv <- read_excel(tmp_path,
+                 sheet = "2. Casos de víctimas fatales",
+                 range = "A2:AK120"
+)
+fwrite(fv, here("./individual/fatal-victims/import/output/fatal-victims.csv"))
