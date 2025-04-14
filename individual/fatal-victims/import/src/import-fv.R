@@ -3,13 +3,11 @@
 # Maintainer: LMN
 # Date: 2025-04-07
 # ---------------------------------------
+# --- libs
+if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
+pacman::p_load(
+               here, dplyr, data.table, googledrive, readxl)
 
-library(dplyr)
-library(here)
-library(readxl)
-library(data.table)
-library(here)
-library(googledrive)
 
 # Auth
 drive_auth(email = Sys.getenv("WORK_EMAIL"))
@@ -39,4 +37,5 @@ fv <- read_excel(tmp_path,
                  sheet = "2. Casos de víctimas fatales",
                  range = "A2:AK120"
 )
+
 fwrite(fv, here("./individual/fatal-victims/import/output/fatal-victims.csv"))
