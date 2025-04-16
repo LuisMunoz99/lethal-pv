@@ -1,4 +1,3 @@
-```markdown
 # Lethal Police Violence (Kilómetro Cero)
 
 Este repositorio contiene los scripts y archivos necesarios para **importar, limpiar y analizar** datos sobre víctimas fatales de la policia documentadas en Kilómetro Cero. El objetivo es hacer que cualquier persona interesada —incluso sin conocimientos avanzados de programación— pueda ejecutar el flujo de trabajo y obtener un informe estadístico.
@@ -21,4 +20,3 @@ Consulta el **Manual** (ubicado en la carpeta `docs` o en este mismo repositorio
 
 ---
 © 2025 - Proyecto victimas fatales de la policia (Kilómetro Cero).  
-```
