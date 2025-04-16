@@ -1,28 +1,7 @@
 ```markdown
 # Lethal Police Violence (Kilómetro Cero)
 
-Este repositorio contiene los scripts y archivos necesarios para **importar, limpiar y analizar** datos sobre víctimas fatales documentadas en Kilómetro Cero. El objetivo es hacer que cualquier persona interesada —incluso sin conocimientos avanzados de programación— pueda ejecutar el flujo de trabajo y obtener un informe estadístico.
-
-## Estructura de Carpetas (Resumen)
-
-```
-.
-├── individual
-│   └── fatal-victims
-│       ├── import
-│       │   ├── src
-│       │   │   └── import-fv.R
-│       │   └── output
-│       ├── clean
-│       │   ├── src
-│       │   │   └── clean-fv.R
-│       │   └── output
-│       └── ...
-└── write
-    └── lpm
-        └── src
-            └── licence-to-kill.Rmd
-```
+Este repositorio contiene los scripts y archivos necesarios para **importar, limpiar y analizar** datos sobre víctimas fatales de la policia documentadas en Kilómetro Cero. El objetivo es hacer que cualquier persona interesada —incluso sin conocimientos avanzados de programación— pueda ejecutar el flujo de trabajo y obtener un informe estadístico.
 
 - **import-fv.R**: Descarga datos desde Google Drive y los guarda en formato CSV.  
 - **clean-fv.R**: Limpia y transforma datos.  
