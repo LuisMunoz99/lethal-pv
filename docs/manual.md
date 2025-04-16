@@ -1,4 +1,3 @@
-```markdown
 # Manual Detallado de Uso
 Este manual explica, **paso a paso**, cómo cualquier persona puede **importar**, **limpiar** y **analizar** datos de víctimas fatales documentadas en Kilómetro Cero
 
@@ -225,38 +224,4 @@ Al abrir el informe final (HTML o PDF), encontrarás:
 
 Cada gráfico incluye títulos y etiquetas que ayudan a su interpretación sin conocimientos técnicos. Además, se utilizan colores contrastantes para resaltar categorías clave (por ejemplo, unarmed vs. armed).
 
----
-
-## 6. Resolución de Problemas Comunes
-
-- **No se encuentra el archivo en Google Drive**  
-  - Asegúrate de que tu variable `WORK_EMAIL` esté configurada correctamente y hayas iniciado sesión con la cuenta autorizada.
-  - Verifica que los archivos existan en la carpeta de Google Drive identificada por “NO EDITAR - Versión pública”.
-
-- **Error al compilar el informe (`licence-to-kill.Rmd`)**  
-  - Confirma que las librerías (por ejemplo, `tidyverse`, `ggplot2`, `treemapify`, etc.) estén instaladas.
-  - Si compilas a PDF y ocurre un error, quizás te falte LaTeX. Intenta compilar primero a HTML.
-
-- **Rutas de archivo no encontradas**  
-  - Comprueba que has abierto el proyecto en la carpeta raíz.
-  - Verifica que `here::here()` apunta correctamente a los directorios `import/output`, `clean/output`, etc.
-
----
-
-## 7. Comentarios Finales
-
-1. **Validación**:  
-   Prueba estos pasos en un equipo limpio (sin configuraciones previas) para asegurar que el proceso sea fácil de seguir por alguien sin experiencia en programación.
-
-2. **Actualizaciones**:  
-   Si cambian columnas o se amplía el rango de celdas en el Excel, ajusta `import-fv.R` según corresponda y anota esos cambios en los comentarios del script.
-
-3. **Transparencia y Colaboración**:  
-   Se recomienda versionar cada cambio en Git, abriendo issues o pull requests para que todos los colaboradores se enteren de cada modificación.
-
-4. **Dónde encontrar ayuda**:  
-   - Consulta https://community.rstudio.com/ si tienes preguntas sobre RStudio.
-   - Abre un issue en GitHub para documentar cualquier incidencia, proponiendo mejoras si es necesario.
-
-¡Gracias por tu compromiso con la transparencia de datos!
 
