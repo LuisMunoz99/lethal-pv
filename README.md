@@ -1,22 +1,22 @@
-# Lethal Police Violence (Kilómetro Cero)
+# Lethal Police Violence in Puerto Rico
 
-Este repositorio contiene los scripts y archivos necesarios para **importar, limpiar y analizar** datos sobre víctimas fatales de la policia documentadas en Kilómetro Cero. El objetivo es hacer que cualquier persona interesada —incluso sin conocimientos avanzados de programación— pueda ejecutar el flujo de trabajo y obtener un informe estadístico.
+This repository contains the scripts and files needed to **import, clean, and analyze** data on police-related fatal incidents documented by Kilómetro Cero. The goal is to enable anyone—regardless of programming experience—to run the workflow and produce a statistical report.
 
-- **import-fv.R**: Descarga datos desde Google Drive y los guarda en formato CSV.  
-- **clean-fv.R**: Limpia y transforma datos.  
-- **licence-to-kill.Rmd**: Genera un informe con gráficos y estadísticas sobre víctimas fatales de la policia.
+- **import-fv.R**: Downloads data from Google Drive and saves it in CSV format.  
+- **clean-fv.R**: Cleans and transforms the data.  
+- **licence-to-kill.Rmd**: Generates a report with graphs and statistics on police-related fatalities.
 
-## Variable de Entorno `WORK_EMAIL`
-Para la autenticación con Google Drive, se debe configurar la variable de entorno `WORK_EMAIL` con el correo autorizado (ej., `(tunombre@dominio.com)`). Esto permite que el script `import-fv.R` acceda a la hoja de cálculo con los datos originales.
+## `WORK_EMAIL` Environment Variable
+To authenticate with Google Drive, you need to set an environment variable called `WORK_EMAIL` with your authorized email (e.g., `(yourname@domain.com)`). This allows the `import-fv.R` script to access the spreadsheet containing the original data.
 
-## Más Información
+## Further Information
 
-Consulta el **Manual** (ubicado en la carpeta `docs` o en este mismo repositorio) para ver instrucciones detalladas sobre:
+See the **Manual** (located in the `docs` folder or elsewhere in this repository) for detailed instructions on:
 
-- Instalación de R y RStudio  
-- Configuración de `WORK_EMAIL`  
-- Ejecución de cada script paso a paso  
-- Interpretación del informe final  
+- Installing R and RStudio  
+- Setting up `WORK_EMAIL`  
+- Step-by-step execution of each script  
+- Understanding the final report  
 
 ---
-© 2025 - Proyecto victimas fatales de la policia (Kilómetro Cero).  
+© 2025 - Fatal Victims of Police Project (Kilómetro Cero).   
