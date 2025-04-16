@@ -7,7 +7,6 @@ Este repositorio contiene los scripts y archivos necesarios para **importar, lim
 - **clean-fv.R**: Limpia y transforma datos.  
 - **licence-to-kill.Rmd**: Genera un informe con gráficos y estadísticas sobre víctimas fatales de la policia.
 
-
 ## Variable de Entorno `WORK_EMAIL`
 Para la autenticación con Google Drive, se debe configurar la variable de entorno `WORK_EMAIL` con el correo autorizado (ej., `(tunombre@dominio.com)`). Esto permite que el script `import-fv.R` acceda a la hoja de cálculo con los datos originales.
 
@@ -21,6 +20,5 @@ Consulta el **Manual** (ubicado en la carpeta `docs` o en este mismo repositorio
 - Interpretación del informe final  
 
 ---
-
 © 2025 - Proyecto victimas fatales de la policia (Kilómetro Cero).  
 ```
