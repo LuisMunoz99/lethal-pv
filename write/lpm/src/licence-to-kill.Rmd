@@ -23,10 +23,9 @@ library(ggplot2)
 library(scales)
 library(treemapify)
 library(viridis)
+library(here)
 
-df <- fread(here::here("./individual/fatal-victims/clean/output/fatal-victims-final.csv"))
-
-
+df <- fread(here::here("individual", "fatal-victims", "clean", "output", "fatal-victims-final.csv"))
 ```
 
 # 1. Introduction
@@ -37,14 +36,12 @@ The analysis is rooted in principles of **epidemiological surveillance**, **data
 ---
 
 # 2. Distribution by Mechanism of Death
-
 ```{r mechanism-frequency}
 smmry <- df %>%
   count(mecanismo, name = "count") %>%
   arrange(desc(count))
 
 smmry
-
 
 treemap_mech <- ggplot(smmry, aes(
   area = count, 
@@ -61,20 +58,19 @@ treemap_mech <- ggplot(smmry, aes(
   theme_minimal(base_size = 14) +
   theme(
     plot.title = element_text(face = "bold", hjust = 0.5),
-    legend.position = "bottom"
+    legend.position = "none"
   )
 
-print(treemap_mech)
+treemap_mech
 ```
 
 ---
 
 # 3. Yearly Trends
-
 ```{r year-distribution}
 year_dist <- df %>%
   count(ano_rip) %>%
-  filter(is.finite(ano_rip)) %>%
+  filter(!is.na(ano_rip)) %>%
   arrange(ano_rip)
 
 year_dist_plot <- ggplot(year_dist, aes(x = ano_rip, y = n)) +
@@ -91,7 +87,7 @@ year_dist_plot <- ggplot(year_dist, aes(x = ano_rip, y = n)) +
     plot.title = element_text(face = "bold", hjust = 0.5)
   )
 
-print(year_dist_plot)
+year_dist_plot
 ```
 
 ---
@@ -100,10 +96,13 @@ print(year_dist_plot)
 
 ```{r firearm-proportion}
 firearm <- df %>%
-  filter(mecanismo == "arma reglamento", !is.na(armed)) %>%
+    mutate(armed = na_if(armed, "")) %>% #exclude those with unknown information
+  filter(mecanismo == "arma de reglamento", !is.na(armed)) %>%
   count(armed) %>%
-  mutate(Proportion = n / sum(n),
-         PercentLabel = paste0(scales::percent(Proportion, 1), "\n", n))
+  mutate(
+    Proportion = n / sum(n),
+    PercentLabel = paste0(scales::percent(Proportion, 1), "\n", n)
+  )
 
 firearm
 
@@ -120,7 +119,7 @@ firearm_pie <- ggplot(firearm, aes(x = "", y = Proportion, fill = armed)) +
   scale_fill_manual(
     values = c("#F98400", "#666666"),
     name = "Armed Status",
-    labels = c("Armed", "Unarmed")
+    labels = c("Unarmed", "Armed", "unknown")
   ) +
   labs(
     title = "Firearm Deaths: Armed vs. Unarmed",
@@ -135,7 +134,7 @@ firearm_pie <- ggplot(firearm, aes(x = "", y = Proportion, fill = armed)) +
     plot.title = element_text(face = "bold", hjust = 0.5)
   )
 
-print(firearm_pie)
+firearm_pie
 ```
 
 ---
@@ -144,6 +143,7 @@ print(firearm_pie)
 
 ```{r age-distribution}
 age <- df %>%
+    filter(!is.na(edad))  %>%
   mutate(AgeGroup = cut(
     edad, 
     breaks = c(15, 21, 31, 41, Inf), 
@@ -154,6 +154,8 @@ age <- df %>%
 age_dist <- age %>%
   count(AgeGroup) %>%
   arrange(AgeGroup)
+
+age_dist
 
 age_plot <- ggplot(age_dist, aes(x = AgeGroup, y = n, fill = AgeGroup)) +
   geom_col(color = "white", show.legend = FALSE) +
@@ -170,7 +172,36 @@ age_plot <- ggplot(age_dist, aes(x = AgeGroup, y = n, fill = AgeGroup)) +
     panel.grid = element_blank()
   )
 
-print(age_plot)
+age_plot
 ```
+
+```{r femincide-prop}
+smmry <- df %>%
+  count(mecanismo, name = "count") %>%
+  arrange(desc(count))
+
+smmry
+
+treemap_mech <- ggplot(smmry, aes(
+  area = count, 
+  fill = mecanismo,
+  label = paste(mecanismo, "\n", count)
+)) +
+  geom_treemap() +
+  geom_treemap_text(color = "white", place = "center", grow = TRUE) +
+  scale_fill_viridis_d(option = "C", end = 0.85) +
+  labs(
+    title = "Distribution of Deaths by Mechanism",
+    caption = "Source: Police intervention deaths dataset (2014–2024)"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    legend.position = "none"
+  )
+
+treemap_mech
+```
+
 
 ---

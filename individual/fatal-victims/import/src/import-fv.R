@@ -39,3 +39,5 @@ fv <- read_excel(tmp_path,
 )
 
 fwrite(fv, here("./individual/fatal-victims/import/output/fatal-victims.csv"))
+
+# done 

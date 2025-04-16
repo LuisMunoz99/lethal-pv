@@ -1,120 +1,120 @@
-id_number,nombre,edad,sexo,fecha_rip,ano_rip,muni_resi,jurisdiccion,mecanismo,armed
-25-001,gabriel alejandro vasandani soto,19,m,2025-01-23,2025,bayamón,estatal,arma reglamento,no
-24-016,ángel martín otero martínez,45,m,2024-12-03,2024,naranjito,estatal,muerte en custodia,no
-24-015,edwin colón dávila,49,m,2024-12-01,2024,trujillo alto,estatal,suicidio policial,si
-24-014,daniel cortés rodríguez,41,m,2024-11-26,2024,ponce,municipal,suicidio policial,si
-24-013,johny morales cardona,34,m,2024-07-13,2024,,municipal,suicidio policial,si
-24-012,alex álvarez,50,m,2024-07-03,2024,,estatal,muerte en custodia,no
-24-011,miguel rivera gonzález,39,m,2024-11-21,2024,san juan,estatal,arma reglamento,no
-24-010,omar ariel vázquez rivera,40,m,2024-09-23,2024,trujillo alto,estatal,arma reglamento,si
-24-009,brandon james rivera,23,m,2024-10-11,2024,,estatal,arma reglamento,no
-24-008,brian a. malavé rivera,20,m,2024-10-11,2024,,estatal,arma reglamento,no
-24-007,gabriel febres benítez,23,m,2024-08-09,2024,toa alta,municipal,arma reglamento,no
-24-006,persona no identificada 24-006,,m,2024-08-04,2024,,estatal,arma reglamento,si
-24-005,yaniel vázquez hernández,23,m,2024-08-08,2024,toa baja,municipal,arma reglamento,si
-24-004,persona no identificada 24-004,,m,2024-04-24,2024,,municipal,muerte en custodia,no
-24-003,persona no identificada 24-003,,,2024-01-31,2024,,estatal,otro,no
-24-002,persona no identificada 24-002,,,2024-01-31,2024,,estatal,otro,no
-24-001,victor r. vicente lara,44,m,2024-01-01,2024,san juan,estatal,muerte en custodia,no
-23-013,ángel m. quiñones negrón,25,m,2023-12-29,2023,orocovis,estatal,suicidio policial,si
-18-013,blas ramirez valentin,71,m,2018-12-13,2018,añasco,estatal,,no
-23-012,víctor alejandro gonzález bermúdez,18,m,2023-11-12,2023,san juan,municipal,,no
-23-011,carlos augusto gonzález valentín,18,m,2023-10-30,2023,mayaguez,estatal y federal,arma reglamento,
-23-010,josé miguel centeno sánchez,55,m,2023-10-30,2023,aguadilla,estatal,suicidio policial,
-23-009,idelfonso janeiro rodríguez,83,m,2023-10-11,2023,isabela,estatal,arma reglamento,no
-23-008,angélica adorno cruzado,77,f,2023-10-11,2023,isabela,estatal,arma reglamento,no
-23-007,jackeline torres castañón,,f,2023-10-16,2023,,estatal,otro,no
-23-006,wilfredo rosario camacho,43,m,2023-10-07,2023,,estatal,otro,no
-23-005,erika de jesús rodríguez,47,f,2023-09-29,2023,,estatal,feminicidio,no
-23-004,jobán luis rivera mendoza,21,m,2023-07-23,2023,,estatal,arma de reglamento,si
-23-003,jeus alaam mendoza,18,m,2023-06-26,2023,trujillo alto,estatal,arma de reglamento,si
-23-002,elbido de la rosa rodríguez,,,2023-01-15,2023,,federal,,
-23-001,juan félix castillo paredes,,,2023-01-15,2023,,federal,,
-22-011,persona no identificada 22-011,,m,2022-11-19,2022,,municipal,,no
-22-010,joseamid hernando vázquez torres,32,m,2022-11-17,2022,san germán,federal,,
-22-009,ángel agustín galvés rodríguez,18,m,2022-10-12,2022,san juan,estatal,persecución vehicular,si
-22-008,javier antonio cordero nevares,16,m,2022-08-01,2022,san juan,estatal,arma de reglamento,no
-22-007,christian josé rodríguez gonzález,19,m,2022-07-15,2022,san juan,municipal,,no
-22-006,jonathan miguel martínez rodríguez,30,m,2022-05-29,2022,guaynabo,estatal,arma de reglamento,si
-22-005,obed moisés garcía beltrán,16,m,2022-05-29,2022,san juan,estatal,arma de reglamento,no
-22-004,persona no identificada 22-004,,f,,,,federal,,
-22-003,brenda liz pérez bahamonde,47,f,2022-01-27,2022,salinas,estatal,feminicidio,no
-22-002,damaris soto sánchez,43,f,2022-01-17,2022,coamo,municipal,,si
-22-001,nelly j. díaz baez,46,f,2022-01-16,2022,gurabo,estatal,suicidio policial,si
-21-003,samuel acevedo mulero,44,m,2021-10-04,2021,bayamón,estatal,,si
-21-002,anthony c. colón rivera,31,m,2021-12-26,2021,naguabo,estatal,,si
-21-001,will joel lópez rodríguez,38,m,2021-11-19,2021,camuy,estatal,,no
-20-010,benjamín omar cotto meléndez,25,m,2020-12-04,2020,carolina,municipal,,no
-20-009,ignacio josé ramos ortiz,20,m,2020-10-08,2020,san juan,estatal,,si
-20-008,leonel sarmiento,23,m,2020-10-08,2020,san juan,estatal,,si
-20-007,persona no identificada 20-007,,m,2020-08-10,2020,,municipal,,si
-20-006,aixa jael lópez otero,51,f,2020-08-09,2020,caguas,estatal,,no
-20-005,elisamuel mestre castro,29,m,2020-02-27,2020,humacao,municipal,,no
-20-004,carlos daniel cruz acevedo,24,m,2020-02-20,2020,cataño,estatal,,no
-20-003,alexander jonuel agosto sánchez,22,m,2020-01-18,2020,san juan,estatal,,no
-20-002,emily montañez cardona,22,f,2020-01-18,2020,san juan,estatal,,no
-20-001,rafael adolfo lópez gonzalez,19,m,2020-01-18,2020,toa baja,estatal,,no
-19-013,hernán monroig barreto,41,m,2019-12-25,2019,isabela,estatal,,no
-19-012,jesús manuel ortíz romero,30,m,2019-11-29,2019,cataño,estatal,,si
-19-011,francisco e. marrero noa,35,m,2019-09-17,2019,naranjito,estatal,,no
-19-010,moises class rivera,21,m,2019-07-23,2019,vega baja,estatal,,si
-19-009,josé edgardo berríos colón,21,m,2019-05-25,2019,morovis,municipal,,si
-19-008,wesley a. ortíz de jesús,15,m,2019-05-08,2019,san juan,estatal,,si
-19-007,giovanni rivera reyes,40,m,2019-05-08,2019,utuado,estatal,,no
-19-006,edgardo torres gómez,46,m,2019-05-05,2019,arecibo,estatal,,si
-19-005,anthony maldonado avilés,32,m,2019-02-17,2019,jayuya,estatal,,no
-19-004,carlos javier betancourt rodriguez,21,m,2019-01-29,2019,juana díaz,estatal,,no
-19-003,irvin rohena gerena,25,m,2019-01-15,2019,canóvanas,estatal,,si
-19-002,randy torres lópez,26,m,2019-01-14,2019,fajardo,estatal,,no
-19-001,pedro jesús cruz núñez,17,m,2019-01-09,2019,gurabo,estatal,,si
-18-014,carlos i. nazario díaz,20,m,2018-03-21,2018,juncos,estatal,,si
-18-012,jonathan vargas semidey,33,m,2018-09-08,2018,quebradillas,estatal,,si
-18-011,carlos humberto cruz martinez,52,m,2018-07-03,2018,añasco,estatal,,si
-18-010,richard sánchez martínez,44,m,2018-12-12,2018,guayama,estatal,,si
-18-009,pilar del lirio hernández llera,39,f,2018-11-23,2018,cidra,estatal,,no
-18-008,luis alberto rivera ledoux,25,m,2018-09-12,2018,san juan,municipal,,si
-18-007,frances dennisse pagán resto,22,f,2018-09-08,2018,ciales,estatal,,no
-18-006,plinio de jesús solano ferrer,49,m,2018-08-16,2018,guaynabo,estatal,,si
-18-005,luis alberto villodas soto,32,m,2018-07-27,2018,trujillo alto,estatal,,si
-18-004,germinar ramos reyes,64,m,2018-07-08,2018,bayamón,estatal,,si
-18-003,gustavo quiles galarza,44,m,2018-07-07,2018,lares,estatal,,no
-18-002,milagros ivette ortíz alvarado,40,f,2018-07-03,2018,lajas,estatal,,no
-18-001,joan david meléndez rodríguez,28,m,2018-03-31,2018,toa alta,estatal,,si
-17-007,orestes rivera mateo,47,m,2017-01-09,2017,aguas buenas,estatal,,si
-17-006,emilio josé mojica arcelay,39,m,2017-06-26,2017,guaynabo,municipal,,no
-17-005,anewki gross polanco,25,m,2017-07-29,2017,carolina,estatal,,no
-17-004,jesús manuel valentín ramos,40,m,2017-05-26,2017,vega baja,estatal,,
-17-003,carlos javier cruz feliciano,24,m,2017-05-05,2017,bayamón,estatal,,si
-17-002,angel jesús santos nuñez,18,m,2017-04-27,2017,san juan,estatal,,
+id_number,nombre,edad,sexo,fecha_rip,ano_rip,muni_resi,jurisdiccion,mecanismo,crisis,armed
+23-004,jobán luis rivera mendoza,21,m,2023-07-23,2023,,estatal,arma de reglamento,0,si
+23-003,jeus alaam mendoza,18,m,2023-06-26,2023,trujillo alto,estatal,arma de reglamento,0,si
+23-002,elbido de la rosa rodríguez,,,2023-01-15,2023,,federal,arma de reglamento,0,
+23-001,juan félix castillo paredes,,,2023-01-15,2023,,federal,arma de reglamento,0,
+22-010,joseamid hernando vázquez torres,32,m,2022-11-17,2022,san germán,federal,arma de reglamento,0,
+22-008,javier antonio cordero nevares,16,m,2022-08-01,2022,san juan,estatal,arma de reglamento,0,no
+22-006,jonathan miguel martínez rodríguez,30,m,2022-05-29,2022,guaynabo,estatal,arma de reglamento,0,si
+22-005,obed moisés garcía beltrán,16,m,2022-05-29,2022,san juan,estatal,arma de reglamento,0,no
+21-002,anthony c. colón rivera,31,m,2021-12-26,2021,naguabo,estatal,arma de reglamento,0,si
+21-001,will joel lópez rodríguez,38,m,2021-11-19,2021,camuy,estatal,arma de reglamento,0,no
+20-010,benjamín omar cotto meléndez,25,m,2020-12-04,2020,carolina,municipal,arma de reglamento,0,no
+20-009,ignacio josé ramos ortiz,20,m,2020-10-08,2020,san juan,estatal,arma de reglamento,0,si
+20-008,leonel sarmiento,23,m,2020-10-08,2020,san juan,estatal,arma de reglamento,0,si
+20-007,persona no identificada 20-007,,m,2020-08-10,2020,,municipal,arma de reglamento,0,si
+20-005,elisamuel mestre castro,29,m,2020-02-27,2020,humacao,municipal,arma de reglamento,0,no
+20-004,carlos daniel cruz acevedo,24,m,2020-02-20,2020,cataño,estatal,arma de reglamento,0,no
+19-013,hernán monroig barreto,41,m,2019-12-25,2019,isabela,estatal,arma de reglamento,0,no
+19-012,jesús manuel ortíz romero,30,m,2019-11-29,2019,cataño,estatal,arma de reglamento,0,si
+19-011,francisco e. marrero noa,35,m,2019-09-17,2019,naranjito,estatal,arma de reglamento,0,no
+18-013,blas ramirez valentin,71,m,2018-12-13,2018,añasco,estatal,,,no
+19-010,moises class rivera,21,m,2019-07-23,2019,vega baja,estatal,arma de reglamento,0,si
+19-009,josé edgardo berríos colón,21,m,2019-05-25,2019,morovis,municipal,arma de reglamento,0,si
+19-008,wesley a. ortíz de jesús,15,m,2019-05-08,2019,san juan,estatal,arma de reglamento,0,si
+19-007,giovanni rivera reyes,40,m,2019-05-08,2019,utuado,estatal,arma de reglamento,1,no
+19-006,edgardo torres gómez,46,m,2019-05-05,2019,arecibo,estatal,arma de reglamento,0,si
+19-005,anthony maldonado avilés,32,m,2019-02-17,2019,jayuya,estatal,arma de reglamento,1,no
+19-004,carlos javier betancourt rodriguez,21,m,2019-01-29,2019,juana díaz,estatal,arma de reglamento,0,no
+19-003,irvin rohena gerena,25,m,2019-01-15,2019,canóvanas,estatal,arma de reglamento,0,si
+19-002,randy torres lópez,26,m,2019-01-14,2019,fajardo,estatal,arma de reglamento,0,no
+19-001,pedro jesús cruz núñez,17,m,2019-01-09,2019,gurabo,estatal,arma de reglamento,0,si
+18-014,carlos i. nazario díaz,20,m,2018-03-21,2018,juncos,estatal,arma de reglamento,0,si
+18-008,luis alberto rivera ledoux,25,m,2018-09-12,2018,san juan,municipal,arma de reglamento,0,si
+18-005,luis alberto villodas soto,32,m,2018-07-27,2018,trujillo alto,estatal,arma de reglamento,0,si
+17-006,emilio josé mojica arcelay,39,m,2017-06-26,2017,guaynabo,municipal,arma de reglamento,0,no
+17-005,anewki gross polanco,25,m,2017-07-29,2017,carolina,estatal,arma de reglamento,0,no
+17-003,carlos javier cruz feliciano,24,m,2017-05-05,2017,bayamón,estatal,arma de reglamento,0,si
+17-002,angel jesús santos nuñez,18,m,2017-04-27,2017,san juan,estatal,arma de reglamento,0,
+16-007,edgardo joel santiago alvarado,19,m,2016-12-01,2016,cayey,estatal,arma de reglamento,0,si
+16-002,edwin josé centeno,38,m,2016-02-22,2016,humacao,estatal,arma de reglamento,0,no
+15-013,juan ramón vega mejía,33,m,2015-01-11,2015,bayamón,municipal,arma de reglamento,0,no
+15-009,ismael madera centeno,42,m,2015-02-16,2015,guayama,estatal y municipal,arma de reglamento,0,si
+15-008,kevin omar solís arizmendi,20,m,2015-07-05,2015,culebra,estatal,arma de reglamento,0,si
+15-007,jesús emanuel maldonado molina,24,m,2015-08-03,2015,ponce,estatal,arma de reglamento,0,si
+15-005,josé david carrión gómez,33,m,2015-05-20,2015,gurabo,estatal,arma de reglamento,0,si
+15-004,heriberto xavier gonzález padilla,26,m,2015-05-20,2015,utuado,estatal,arma de reglamento,0,no
+15-003,rosario hernández de hoyos,42,f,2015-09-28,2015,ponce,estatal,arma de reglamento,0,si
+15-002,luz miladys soto segarra,49,f,2015-09-28,2015,ponce,estatal,arma de reglamento,0,si
+15-001,frank román rodríguez,49,m,2015-09-28,2015,sabana grande,estatal,arma de reglamento,0,si
+14-008,jorge luis ortiz jordán,35,m,2014-02-26,2014,san juan,estatal,arma de reglamento,0,no
+14-007,carlos sandoval de jesús,24,m,2014-06-10,2014,guaynabo,municipal,arma de reglamento,0,no
+14-006,epifanio abreu,58,m,2014-04-17,2014,caguas,municipal,arma de reglamento,0,no
+14-004,freddie díaz carrión,41,m,2014-07-22,2014,bayamón,estatal,arma de reglamento,0,si
+14-003,rafael rodriguez carrasquillo,33,m,2014-03-10,2014,juncos,estatal,arma de reglamento,0,si
+14-002,ángel luis soto matos,19,m,2014-01-10,2014,naguabo,estatal,arma de reglamento,0,si
+14-001,luis antongiorgi cruz,20,m,2014-01-02,2014,humacao,estatal y municipal,arma de reglamento,0,no
+25-001,gabriel alejandro vasandani soto,19,m,2025-01-23,2025,bayamón,estatal,arma de reglamento,0,no
+24-011,miguel rivera gonzález,39,m,2024-11-21,2024,san juan,estatal,arma de reglamento,0,no
+24-010,omar ariel vázquez rivera,40,m,2024-09-23,2024,trujillo alto,estatal,arma de reglamento,0,si
+24-009,brandon james rivera,23,m,2024-10-11,2024,,estatal,arma de reglamento,0,no
+24-008,brian a. malavé rivera,20,m,2024-10-11,2024,,estatal,arma de reglamento,0,no
+24-007,gabriel febres benítez,23,m,2024-08-09,2024,toa alta,municipal,arma de reglamento,0,no
+24-006,persona no identificada 24-006,,m,2024-08-04,2024,,estatal,arma de reglamento,0,si
+24-005,yaniel vázquez hernández,23,m,2024-08-08,2024,toa baja,municipal,arma de reglamento,0,si
+23-011,carlos augusto gonzález valentín,18,m,2023-10-30,2023,mayaguez,estatal y federal,arma de reglamento,0,
+23-009,idelfonso janeiro rodríguez,83,m,2023-10-11,2023,isabela,estatal,arma de reglamento,0,no
+23-008,angélica adorno cruzado,77,f,2023-10-11,2023,isabela,estatal,arma de reglamento,0,no
+23-005,erika de jesús rodríguez,47,f,2023-09-29,2023,,estatal,feminicidio,0,no
+22-003,brenda liz pérez bahamonde,47,f,2022-01-27,2022,salinas,estatal,feminicidio,0,no
+18-009,pilar del lirio hernández llera,39,f,2018-11-23,2018,cidra,estatal,feminicidio,0,no
+18-007,frances dennisse pagán resto,22,f,2018-09-08,2018,ciales,estatal,feminicidio,0,no
+18-002,milagros ivette ortíz alvarado,40,f,2018-07-03,2018,lajas,estatal,feminicidio,0,no
+25-002,sin identificar,,m,2025-04-13,2025,,estatal,muerte en custodia,0,no
+24-016,ángel martín otero martínez,45,m,2024-12-03,2024,naranjito,estatal,muerte en custodia,0,no
+24-012,alex álvarez,50,m,2024-07-03,2024,,estatal,muerte en custodia,0,no
+24-004,persona no identificada 24-004,,m,2024-04-24,2024,,municipal,muerte en custodia,0,no
+24-001,victor r. vicente lara,44,m,2024-01-01,2024,san juan,estatal,muerte en custodia,0,no
+21-003,samuel acevedo mulero,44,m,2021-10-04,2021,bayamón,estatal,muerte en custodia,0,si
+20-006,aixa jael lópez otero,51,f,2020-08-09,2020,caguas,estatal,muerte en custodia,1,no
+18-006,plinio de jesús solano ferrer,49,m,2018-08-16,2018,guaynabo,estatal,muerte en custodia,0,si
+18-004,germinar ramos reyes,64,m,2018-07-08,2018,bayamón,estatal,muerte en custodia,0,si
+18-003,gustavo quiles galarza,44,m,2018-07-07,2018,lares,estatal,muerte en custodia,0,no
 17-001,"josé álvarez portalatín
-nota: este nombre no aparece en banco de datos del registro demográfico",,m,2017-02-18,2017,,estatal,,
-16-008,carlos alexis dueño dávila,21,m,2016-12-02,2016,carolina,estatal,,
-16-007,edgardo joel santiago alvarado,19,m,2016-12-01,2016,cayey,estatal,,si
-16-006,rafael orlando maldonado breslin,48,m,2016-11-12,2016,bayamón,estatal,,no
-16-005,michelle sánchez tirado,22,f,2016-08-27,2016,isabela,estatal,,no
-16-004,manuel ángel báez ferrer,36,m,2016-08-20,2016,cataño,estatal,,si
-16-003,josé ramón ruiz santana,52,m,2016-06-26,2016,humacao,estatal,,no
-16-002,edwin josé centeno,38,m,2016-02-22,2016,humacao,estatal,,no
-16-001,antonio rubén martínez pomales,40,m,2016-01-03,2016,juana díaz,estatal,,no
-15-014,nelson onell flores ortiz,25,m,2015-11-30,2015,san juan,estatal,,no
-15-013,juan ramón vega mejía,33,m,2015-01-11,2015,bayamón,municipal,,no
-15-012,jeremías vazquez irizarry,45,m,2015-08-31,2015,utuado,estatal,,si
-15-011,kevin san inocencio piñeiro,22,m,2015-11-30,2015,san juan,estatal,,no
-15-010,josé antonio arrieta gonzález,19,m,2015-11-30,2015,san juan,estatal,,no
-15-009,ismael madera centeno,42,m,2015-02-16,2015,guayama,estatal y municipal,,si
-15-008,kevin omar solís arizmendi,20,m,2015-07-05,2015,culebra,estatal,,si
-15-007,jesús emanuel maldonado molina,24,m,2015-08-03,2015,ponce,estatal,,si
-15-006,jeremías josé fret molina,34,m,2015-12-09,2015,dorado,estatal,taser,no
-15-005,josé david carrión gómez,33,m,2015-05-20,2015,gurabo,estatal,,si
-15-004,heriberto xavier gonzález padilla,26,m,2015-05-20,2015,utuado,estatal,,no
-15-003,rosario hernández de hoyos,42,f,2015-09-28,2015,ponce,estatal,,si
-15-002,luz miladys soto segarra,49,f,2015-09-28,2015,ponce,estatal,,si
-15-001,frank román rodríguez,49,m,2015-09-28,2015,sabana grande,estatal,,si
-14-008,jorge luis ortiz jordán,35,m,2014-02-26,2014,san juan,estatal,,no
-14-007,carlos sandoval de jesús,24,m,2014-06-10,2014,guaynabo,municipal,,no
-14-006,epifanio abreu,58,m,2014-04-17,2014,caguas,municipal,,no
-14-005,víctor cintrón basco,18,m,2014-05-30,2014,barranquitas,estatal,,no
-14-004,freddie díaz carrión,41,m,2014-07-22,2014,bayamón,estatal,,si
-14-003,rafael rodriguez carrasquillo,33,m,2014-03-10,2014,juncos,estatal,,si
-14-002,ángel luis soto matos,19,m,2014-01-10,2014,naguabo,estatal,,si
-14-001,luis antongiorgi cruz,20,m,2014-01-02,2014,humacao,estatal y municipal,,no
+nota: este nombre no aparece en banco de datos del registro demográfico",,m,2017-02-18,2017,,estatal,muerte en custodia,0,
+16-008,carlos alexis dueño dávila,21,m,2016-12-02,2016,carolina,estatal,muerte en custodia,0,
+16-006,rafael orlando maldonado breslin,48,m,2016-11-12,2016,bayamón,estatal,muerte en custodia,0,no
+16-003,josé ramón ruiz santana,52,m,2016-06-26,2016,humacao,estatal,muerte en custodia,0,no
+16-001,antonio rubén martínez pomales,40,m,2016-01-03,2016,juana díaz,estatal,muerte en custodia,1,no
+24-003,persona no identificada 24-003,,,2024-01-31,2024,,estatal,otro,0,no
+24-002,persona no identificada 24-002,,,2024-01-31,2024,,estatal,otro,0,no
+23-007,jackeline torres castañón,,f,2023-10-16,2023,,estatal,otro,0,no
+23-006,wilfredo rosario camacho,43,m,2023-10-07,2023,,estatal,otro,0,no
+14-005,víctor cintrón basco,18,m,2014-05-30,2014,barranquitas,estatal,otro,0,no
+23-012,víctor alejandro gonzález bermúdez,18,m,2023-11-12,2023,san juan,municipal,persecución vehicular,0,no
+22-011,persona no identificada 22-011,,m,2022-11-19,2022,,municipal,persecución vehicular,0,no
+22-009,ángel agustín galvés rodríguez,18,m,2022-10-12,2022,san juan,estatal,persecución vehicular,0,si
+22-007,christian josé rodríguez gonzález,19,m,2022-07-15,2022,san juan,municipal,persecución vehicular,0,no
+20-003,alexander jonuel agosto sánchez,22,m,2020-01-18,2020,san juan,estatal,persecución vehicular,0,no
+20-002,emily montañez cardona,22,f,2020-01-18,2020,san juan,estatal,persecución vehicular,0,no
+20-001,rafael adolfo lópez gonzalez,19,m,2020-01-18,2020,toa baja,estatal,persecución vehicular,0,no
+16-005,michelle sánchez tirado,22,f,2016-08-27,2016,isabela,estatal,persecución vehicular,0,no
+15-014,nelson onell flores ortiz,25,m,2015-11-30,2015,san juan,estatal,persecución vehicular,0,no
+15-011,kevin san inocencio piñeiro,22,m,2015-11-30,2015,san juan,estatal,persecución vehicular,0,no
+15-010,josé antonio arrieta gonzález,19,m,2015-11-30,2015,san juan,estatal,persecución vehicular,0,no
+24-015,edwin colón dávila,49,m,2024-12-01,2024,trujillo alto,estatal,suicidio policial,0,si
+24-014,daniel cortés rodríguez,41,m,2024-11-26,2024,ponce,municipal,suicidio policial,0,si
+24-013,johny morales cardona,34,m,2024-07-13,2024,,municipal,suicidio policial,0,si
+23-013,ángel m. quiñones negrón,25,m,2023-12-29,2023,orocovis,estatal,suicidio policial,0,si
+23-010,josé miguel centeno sánchez,55,m,2023-10-30,2023,aguadilla,estatal,suicidio policial,0,
+22-002,damaris soto sánchez,43,f,2022-01-17,2022,coamo,municipal,suicidio policial,0,si
+22-001,nelly j. díaz baez,46,f,2022-01-16,2022,gurabo,estatal,suicidio policial,0,si
+18-012,jonathan vargas semidey,33,m,2018-09-08,2018,quebradillas,estatal,suicidio policial,0,si
+18-011,carlos humberto cruz martinez,52,m,2018-07-03,2018,añasco,estatal,suicidio policial,0,si
+18-010,richard sánchez martínez,44,m,2018-12-12,2018,guayama,estatal,suicidio policial,0,si
+18-001,joan david meléndez rodríguez,28,m,2018-03-31,2018,toa alta,estatal,suicidio policial,0,si
+17-007,orestes rivera mateo,47,m,2017-01-09,2017,aguas buenas,estatal,suicidio policial,0,si
+16-004,manuel ángel báez ferrer,36,m,2016-08-20,2016,cataño,estatal,suicidio policial,0,si
+15-012,jeremías vazquez irizarry,45,m,2015-08-31,2015,utuado,estatal,suicidio policial,0,si
+17-004,jesús manuel valentín ramos,40,m,2017-05-26,2017,vega baja,estatal,taser,0,
+15-006,jeremías josé fret molina,34,m,2015-12-09,2015,dorado,estatal,taser,1,no
