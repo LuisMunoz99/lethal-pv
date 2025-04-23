@@ -7,13 +7,18 @@
 # --- libs
 if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(
-               here, dplyr, data.table, janitor, stringr, lubridate)
+               argparse,
+               dplyr,
+               data.table,
+               janitor,
+               stringr,
+               lubridate)
 
-# --- files
-args <- list(
-  input  = here("./individual/fatal-victims/import/output/fatal-victims.csv"),
-  output = here("./individual/fatal-victims/clean/output/fatal-victims-final.csv")
-)
+# args 
+parser <- ArgumentParser()
+parser$add_argument("--input")
+parser$add_argument("--output")
+args <- parser$parse_args()
 
 
 df <- fread(args$input)  %>%

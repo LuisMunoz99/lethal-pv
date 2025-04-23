@@ -6,7 +6,14 @@
 # --- libs
 if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(
-               here, dplyr, data.table, googledrive, readxl)
+               here, dplyr, data.table, googledrive, readxl, arrow, argparse)
+
+
+# args {{{
+parser <- ArgumentParser()
+parser$add_argument("--output")
+args <- parser$parse_args()
+# }}}
 
 
 # Auth
@@ -38,6 +45,6 @@ fv <- read_excel(tmp_path,
                  range = "A2:AK120"
 )
 
-fwrite(fv, here("./individual/fatal-victims/import/output/fatal-victims.csv"))
+fwrite(fv, args$output)
 
 # done 
