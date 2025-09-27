@@ -6,12 +6,12 @@
 # --- libs
 if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(
-               here, dplyr, data.table, googledrive, readxl, arrow, argparse)
+               here, dplyr, data.table, googledrive, readxl, arrow, argparse, stringr)
 
 
 # args {{{
 parser <- ArgumentParser()
-parser$add_argument("--output")
+parser$add_argument("--output", default = "output/fatal-victims.csv")
 args <- parser$parse_args()
 # }}}
 
@@ -42,9 +42,13 @@ drive_download(as_id(file), path = tmp_path, overwrite = TRUE)
 # 5. output 
 fv <- read_excel(tmp_path,
                  sheet = "2. Casos de víctimas fatales",
-                 range = "A2:AK120"
+                 skip = 1
 )
 
-fwrite(fv, args$output)
+out <- fv %>%
+  filter(!is.na(`ID#`) & str_detect(as.character(`ID#`), "^\\d{2}-\\d{3}$"))
+
+
+fwrite(out, args$output)
 
 # done 

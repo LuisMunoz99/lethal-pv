@@ -1,11 +1,17 @@
 id_number,nombre,edad,sexo,fecha_rip,ano_rip,muni_resi,jurisdiccion,mecanismo,crisis,armed
-25-002,sin identificar,,m,2025-04-13,2025,,estatal,muerte en custodia,0,no
+25-008,lucas rosado bruno,82,,,,,,,,no
+25-007,joshua joel rivera rijos,33,m,2025-06-30,2025,toa baja,estatal,persecución vehicular,0,si
+25-006,josé david rodríguez correa,23,m,2025-06-24,2025,cayey,estatal,arma de reglamento,0,no
+25-005,josé a. chevres ramos,29,m,2025-06-23,2025,cabo rojo,estatal,arma de reglamento,0,si
+25-004,antonio pabón morales,51,m,2025-06-17,2025,ponce,estatal,muerte en custodia,1,si
+25-003,daniel maldonado díaz,42,m,2025-05-26,2025,utuado,estatal,arma de reglamento,1,no
+25-002,persona no identificada 2025,,m,2025-04-13,2025,,estatal,muerte en custodia,1,no
 25-001,gabriel alejandro vasandani soto,19,m,2025-01-23,2025,bayamón,estatal,arma de reglamento,0,no
 24-016,ángel martín otero martínez,45,m,2024-12-03,2024,naranjito,estatal,muerte en custodia,0,no
 24-015,edwin colón dávila,49,m,2024-12-01,2024,trujillo alto,estatal,suicidio policial,0,si
 24-014,daniel cortés rodríguez,41,m,2024-11-26,2024,ponce,municipal,suicidio policial,0,si
 24-013,johny morales cardona,34,m,2024-07-13,2024,,municipal,suicidio policial,0,si
-24-012,alex álvarez,50,m,2024-07-03,2024,,estatal,muerte en custodia,0,no
+24-012,alex álvarez colón,50,m,2024-07-03,2024,carolina,estatal,muerte en custodia,0,no
 24-011,miguel rivera gonzález,39,m,2024-11-21,2024,san juan,estatal,arma de reglamento,0,no
 24-010,omar ariel vázquez rivera,40,m,2024-09-23,2024,trujillo alto,estatal,arma de reglamento,0,si
 24-009,brandon james rivera,23,m,2024-10-11,2024,,estatal,arma de reglamento,0,no
@@ -46,7 +52,7 @@ id_number,nombre,edad,sexo,fecha_rip,ano_rip,muni_resi,jurisdiccion,mecanismo,cr
 21-002,anthony c. colón rivera,31,m,2021-12-26,2021,naguabo,estatal,arma de reglamento,0,si
 21-001,will joel lópez rodríguez,38,m,2021-11-19,2021,camuy,estatal,arma de reglamento,0,no
 20-010,benjamín omar cotto meléndez,25,m,2020-12-04,2020,carolina,municipal,arma de reglamento,0,no
-20-009,ignacio josé ramos ortiz,20,m,2020-10-08,2020,san juan,estatal,arma de reglamento,0,si
+20-009,ignacio ramos ortiz,20,m,2020-10-08,2020,san juan,estatal,arma de reglamento,0,si
 20-008,leonel sarmiento,23,m,2020-10-08,2020,san juan,estatal,arma de reglamento,0,si
 20-007,persona no identificada 20-007,,m,2020-08-10,2020,,municipal,arma de reglamento,0,si
 20-006,aixa jael lópez otero,51,f,2020-08-09,2020,caguas,estatal,muerte en custodia,1,no
@@ -118,3 +124,4 @@ nota: este nombre no aparece en banco de datos del registro demográfico",,m,201
 14-004,freddie díaz carrión,41,m,2014-07-22,2014,bayamón,estatal,arma de reglamento,0,si
 14-003,rafael rodriguez carrasquillo,33,m,2014-03-10,2014,juncos,estatal,arma de reglamento,0,si
 14-002,ángel luis soto matos,19,m,2014-01-10,2014,naguabo,estatal,arma de reglamento,0,si
+14-001,luis antongiorgi cruz,20,m,2014-01-02,2014,humacao,estatal y municipal,arma de reglamento,0,no
