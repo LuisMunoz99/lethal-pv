@@ -1,4 +1,4 @@
-# Lethal Police Violence in Puerto Rico
+# Lethal Police Violence in Puerto Rico  (project still in process) 
 
 This repository contains the scripts and files needed to **import, clean, and analyze** data on police-related fatal incidents documented by Kilómetro Cero. The goal is to enable anyone—regardless of programming experience—to run the workflow and produce a statistical report.
 
